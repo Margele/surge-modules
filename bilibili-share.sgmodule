@@ -1,0 +1,12 @@
+#!name=哔哩哔哩分享增强
+#!desc=移除无用分享选项，修改链接分享信息。
+#!author=Margele
+#!category=Margele's Surge Modules
+
+[Script]
+bilibili-share-click-hooks = type=http-request,pattern=^https:\/\/api\.bili(?:bili|api)\.(?:com|net)\/x\/share\/click$,script-path=https://raw.githubusercontent.com/Margele/surge-modules/refs/heads/main/bilibili-share-hook.js,requires-body=true
+bilibili-share-channel-hooks = type=http-request,pattern=^https:\/\/api\.bili(?:bili|api)\.(?:com|net)\/x\/share\/channels,script-path=https://raw.githubusercontent.com/Margele/surge-modules/refs/heads/main/bilibili-share-hook.js,requires-body=true
+
+[MITM]
+hostname = %APPEND% app.biliapi.net, api.bilibili.com, api.biliapi.net
+h2 = true
