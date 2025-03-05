@@ -95,4 +95,6 @@ if ($request.url.includes("share/click")) {
     processShare();
 } else if ($request.url.includes("/share/channels") && $request.url.includes("share_origin=vinfo_player")) {
     processChannels();
+} else {
+    $done({});
 }
