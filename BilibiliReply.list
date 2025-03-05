@@ -3,4 +3,4 @@
 
 URL-REGEX,^https?:\/\/(grpc|app)\.bili(bili\.com|api\.net|api\.com)\/bilibili\.main\.dynamic\.feed\.v1\.Feed\/CreateDyn$
 URL-REGEX,^https?:\/\/(grpc|app)\.bili(bili\.com|api\.net|api\.com)\/bilibili\.main\.dynamic\.feed\.v1\.Feed\/SubmitCheck$
-URL-REGEX,^https?:\/\/api\.bili(bili\.com|api\.net)\/x\/v2\/reply\/add$
+URL-REGEX,^https?:\/\/api\.bili(bili\.com|api\.net|api\.com)\/x\/v2\/reply\/add$
