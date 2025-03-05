@@ -1,0 +1,6 @@
+# 使用前，请确保你已经添加了MITM主机名
+# hostname = %APPEND% www.bilibili.com, search.bilibili.com, app.bilibili.com, app.biliapi.net, app.biliapi.com, api.bilibili.com, api.biliapi.net, api.biliapi.com, grpc.biliapi.net
+
+URL-REGEX,^https?:\/\/(grpc|app)\.bili(bili\.com|api\.net|api\.com)\/bilibili\.main\.dynamic\.feed\.v1\.Feed\/CreateDyn$
+URL-REGEX,^https?:\/\/(grpc|app)\.bili(bili\.com|api\.net|api\.com)\/bilibili\.main\.dynamic\.feed\.v1\.Feed\/SubmitCheck$
+URL-REGEX,^https?:\/\/api\.bili(bili\.com|api\.net)\/x\/v2\/reply\/add$
