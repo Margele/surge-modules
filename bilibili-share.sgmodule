@@ -8,5 +8,5 @@ bilibili-share-click-hooks = type=http-request,pattern=^https:\/\/api\.bili(?:bi
 bilibili-share-channel-hooks = type=http-request,pattern=^https:\/\/api\.bili(?:bili|api)\.(?:com|net)\/x\/share\/channels,script-path=https://raw.githubusercontent.com/Margele/surge-modules/refs/heads/main/bilibili-share-hook.js,requires-body=true
 
 [MITM]
-hostname = %APPEND% app.biliapi.net, api.bilibili.com, api.biliapi.net
+hostname = %APPEND% www.bilibili.com, search.bilibili.com, app.bilibili.com, app.biliapi.net, app.biliapi.com, api.bilibili.com, api.biliapi.net, api.biliapi.com, grpc.biliapi.net
 h2 = true
